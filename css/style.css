@@ -17,6 +17,8 @@ html{
     font-size: 62.5%;
     font-family: 'Inter' , sans-serif;
 }
+
+
 header{
     background-color: var(--black);
 }
@@ -93,8 +95,11 @@ header{
 }
 .main-principal-container{
     width: 100%;
+    min-width: 320px;
+    max-width: 900px;
+    margin: 0 auto;
     height: 700px;
-     background-image: url("../assets/img/background.png"); 
+    background-image: url("../assets/img/background.png"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
