@@ -17,13 +17,19 @@ html{
     font-size: 62.5%;
     font-family: 'Inter' , sans-serif;
 }
+header{
+    background-color: var(--black);
+}
 .header-container{
     display: flex; 
     justify-content: space-between;
     align-items: center;
-    background-color: var(--black);
+
     width: 100%;
+    min-width: 320px;
+    max-width: 900px;
     height: 70px;
+    margin: 0 auto;
 }
 .header-container h5{
     margin-inline-start: 20px;
@@ -32,5 +38,58 @@ html{
     font-weight: bold;
     line-height: 2.8rem;
     color: var(--white);
-}   
-
+} 
+.menu-container__icon{
+    position: relative;
+    z-index: 10;
+}  
+.menu-container__icon img{
+    margin-inline-end: 20px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.menu-container__list{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--black);
+    box-shadow: 2px 0px 5px 2px rgb(66, 66, 66);
+    width: 120px;
+    height: 70vh;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-delay: ease; 
+    overflow-x: none;    
+    border-radius: 4px;
+}
+ .active {
+    transform: translateX(150px);  
+}
+.opacity{
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all .2s ease;
+}
+.menu-container__list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding-block-start: 20px;
+    list-style: none;
+}
+.menu-container__list ul li a {
+    padding: 8px 10px ;
+    font-family: 'Inter' , sans-serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.menu-container__list ul li a:hover{
+    background-color: var(--white);
+    color: var(--black);
+   
+}
