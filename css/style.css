@@ -1,0 +1,36 @@
+:root{
+    --black: #000000; 
+    --primary: #FED941;
+    --grey: #808080;
+    --white: #FFFFFF;
+
+    /* topografi */
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Inter' , sans-serif;
+}
+.header-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    width: 100%;
+    height: 70px;
+}
+.header-container h5{
+    margin-inline-start: 20px;
+    font-size: 2.5rem;
+    font-family: 'Inter' , sans-serif;
+    font-weight: bold;
+    line-height: 2.8rem;
+    color: var(--white);
+}   
+
