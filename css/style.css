@@ -3,6 +3,7 @@
     --primary: #FED941;
     --grey: #808080;
     --white: #FFFFFF;
+    --fondo: #E8E8E6 ; 
 
     /* topografi */
 
@@ -28,7 +29,7 @@ header{
     align-items: center;
     width: 100%;
     min-width: 320px;
-    max-width: 900px;
+     max-width: 900px; 
     height: 70px;
     margin: 0 auto;
 }
@@ -93,16 +94,20 @@ header{
     color: var(--black);
    
 }
-.main-principal-container{
-    width: 100%;
-    min-width: 320px;
-    max-width: 900px;
-    margin: 0 auto;
-    height: 700px;
+.main-sections-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6 ,1fr);
+    row-gap: 20px;
+}
+.main-passworld-container{
+    grid-row: 1 / 2;
     background-image: url("../assets/img/background.png"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
 }
 .main-title-container{
     width: 320px;
@@ -141,4 +146,132 @@ header{
     font-weight: bold;
     color: var(--white);
     text-decoration: none;
+}
+.title-container__info{
+    margin-block-start: 24px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.7rem;
+    text-decoration: underline;
+    color: var(--grey);
+}
+.main-phone-container , .main-iphone3-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    margin-inline-start: calc(50% - 135px);
+     margin-block-start: 57px;
+    grid-column: 1;
+    grid-template-rows: 2;
+}
+.main-fast-check-container{
+    grid-column: 1;
+    grid-row: 2;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; 
+     margin-block-start: 50px; 
+}
+.fast-check-icon-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+    height: 313px;
+}
+.fast-check-icon-container .icons{
+    display: inline-block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 125px;
+    height: 70px;
+    padding: 24px;
+}
+.fast-check-icon-container .icon__cnn{
+    background-image: url('../assets/img/cnn.svg');
+}
+.fast-check-icon-container .icon__reuters{
+    background-image: url('../assets/img/reuters.svg');
+}
+.fast-check-icon-container .icon__forbes{
+    background-image: url('../assets/img/forbes.svg');
+}
+.fast-check-icon-container .icon__logue{
+    background-image: url('../assets/img/logue.svg');
+}
+.main-fast-check-container img {
+    margin-block-start: 64px;
+    width: 360px;
+    height: 203px;
+}
+.main-check-description , .download-title-container , .login-title-container{
+    width: 320px;
+    height: 194px;
+    margin: 0 auto;
+    margin-block-start: 64px;
+  
+}
+.main-check-description h2 , .download-title-container h2 , .login-title-container h2{
+    font-size: 2.5rem; 
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: 0.01em;
+}
+.main-check-description p  , .download-title-container p , .login-title-container p{ 
+    padding-block-start: 20px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: var(--grey);
+}
+.main-push-container{
+     display: grid; 
+     grid-template-rows: 200px 200px; 
+    grid-row:  3;
+    position: relative;
+    background-color:var(--fondo);
+}
+
+.main-push-container .description{
+    grid-row: 1;
+    margin-block-start: 20px;
+}
+.main-push-container .phone2 {
+    grid-row: 2;
+}
+.main-download-container {
+    grid-row: 4;
+    background: var(--black);
+}
+.download-title-container h2{
+    color: var(--white);
+}
+.download-title-container p {
+    color: var(--white);
+}
+.download-container{
+    width: 340px;
+    height: 40px;
+    border-radius:100px;
+    background: var(--white);
+    
+}
+.download-container div{
+    width: 205px;
+    height: 40px;
+    border-radius: 100px;
+    background-color: #2FB464;
+}
+.main-login-container{
+    background: var(--white);
+}
+.login-image-container img {
+    width: 320px;
+    height: 320px;
+}
+.main-cards-container{
+    background: var(--fondo);
 }
