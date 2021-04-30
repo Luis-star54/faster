@@ -97,7 +97,7 @@ header{
 .main-sections-container{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6 ,1fr);
+    grid-template-rows: repeat(5, 1fr) 2200px;
     row-gap: 20px;
 }
 .main-passworld-container{
@@ -132,7 +132,7 @@ header{
     line-height: 2.2rem;
     color: var(--grey);
 }
-.title-cotainer__buttom{
+.title-cotainer__buttom , .registry-buttom{
     display: inline-block;
     text-align: center;
     padding-block-start: 8px;
@@ -146,6 +146,7 @@ header{
     font-weight: bold;
     color: var(--white);
     text-decoration: none;
+    background-color: var(--black);
 }
 .title-container__info{
     margin-block-start: 24px;
@@ -247,6 +248,7 @@ header{
     grid-row: 2;
 }
 .main-download-container {
+   
     grid-row: 4;
     background: var(--black);
 }
@@ -270,6 +272,7 @@ header{
     background-color: #2FB464;
 }
 .main-login-container{
+    grid-row: 5;
     background: var(--white);
 }
 .login-image-container img {
@@ -278,4 +281,101 @@ header{
 }
 .main-cards-container{
     background: var(--fondo);
+}
+.main-cards-container{
+    grid-row: 6;
+}
+.main-cards-container h2 {
+    padding-block-start: 80px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block-start: 100px;
+
+}
+.card-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: auto;
+    margin-block-start: 80px;
+    border-radius: 8px;
+    background: var(--white);
+    text-align: center;
+}
+.card-container img {
+    position: absolute;
+    left: 38%;
+    top: -14%;
+}
+.card-title-container{
+    padding-block-start: 100px;
+    width: 310px;
+    height: auto;
+}
+.card-title {
+    font-size: 1.8rem;
+    font-weight: normal;
+    line-height: 2.7rem;
+    color: var(--black);
+}
+.social-media-container {
+    padding-block-start: 30px;
+    width: 123px;
+    height: auto;
+    margin: 0 auto;
+}.social-media-container .name , .twitter{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.7rem;
+    color: var(--black);
+}
+.twitter{
+    padding-block-start: 5px;
+    color: var(--grey);
+}
+.footer-container{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: var(--black);
+}
+.card-registry-container{
+    position: absolute;
+    left: 5.56%;
+    top: -13%;
+    width: 320px;
+    height: 188px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 44px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.registry-info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 180px;
+}
+.registry-info-container h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.card-registry-container p {
+    padding-block-start: 12px;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 2.2rem;
+    color: var(--grey);
 }
