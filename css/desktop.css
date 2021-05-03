@@ -1,0 +1,38 @@
+
+.main-passworld-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 200px 300px;
+    align-items: center;
+    justify-content: center;
+}
+.main-title-container{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.main-phone-container{
+    position: relative;
+    grid-column: 1;
+    grid-row:2 ;
+    background-origin: t;
+}
+.main-fast-check-container{
+    margin-block-start: -59px;
+    display: grid;
+    grid-template-columns:400px 872px;
+    align-items: flex-start;
+}
+.fast-check-icon-container{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 600px;
+    grid-column: 2;
+}
+.fast-check-info{
+    grid-column: 2;
+}
+.main-fast-check-container img{
+    width: 876px;
+    height: 496px;
+}
