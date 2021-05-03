@@ -156,7 +156,7 @@ header{
     text-decoration: underline;
     color: var(--grey);
 }
-.main-phone-container , .main-iphone3-container{
+.main-phone-container ,.main-phone2-container ,.main-iphone3-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -235,7 +235,7 @@ header{
 .main-push-container{
      display: grid; 
      grid-template-rows: 200px 200px; 
-    grid-row:  3;
+     grid-row:  3;
     position: relative;
     background-color:var(--fondo);
 }
@@ -244,11 +244,11 @@ header{
     grid-row: 1;
     margin-block-start: 20px;
 }
-.main-push-container .phone2 {
+.main-push-container .main-phone2-container {
     grid-row: 2;
 }
+/* la cuarte seccion del main */
 .main-download-container {
-   
     grid-row: 4;
     background: var(--black);
 }
@@ -259,6 +259,7 @@ header{
     color: var(--white);
 }
 .download-container{
+    margin-block-start: 40px;
     width: 340px;
     height: 40px;
     border-radius:100px;

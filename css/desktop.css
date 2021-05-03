@@ -18,11 +18,12 @@
     background-origin: t;
 }
 .main-fast-check-container{
-    margin-block-start: -59px;
+    margin-block-start: -250px;
     display: grid;
     grid-template-columns:400px 872px;
     align-items: flex-start;
 }
+
 .fast-check-icon-container{
     flex-direction: row;
     justify-content: space-evenly;
@@ -35,4 +36,48 @@
 .main-fast-check-container img{
     width: 876px;
     height: 496px;
+}
+.main-push-container{
+    background-image: url('../assets/img/fondo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.main-push-container .description{
+    grid-column: 2;
+    grid-row: 2;
+}
+.main-phone2-container{
+    grid-column: 1;
+    grid-row: 2;
+    position: relative;
+}
+.main-download-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.download-title-container {
+    position: relative;
+    width: 100%;
+    grid-column: 2;
+    grid-row: 1;
+}
+.download-title-container h2{
+    font-size: 4.8rem;
+    line-height: 5.8rem;
+}
+.download-title-container p {
+    font-size: 2rem;
+    line-height: 2.7rem;
+}
+.download-container {
+    width: 800px;
+    grid-column: 2;
+    grid-row:1;
+}
+.main-iphone3-container{
+    position: relative;
+    grid-column: 1;
 }
