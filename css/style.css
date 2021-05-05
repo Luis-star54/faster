@@ -15,11 +15,13 @@
 html{
     font-size: 62.5%;
     font-family: 'Inter' , sans-serif;
+  
 }
 
 
 header{
     background-color: var(--black);
+    width: 100%;
 }
 .header-container{
     display: flex; 
@@ -27,7 +29,7 @@ header{
     align-items: center;
     width: 100%;
     min-width: 320px;
-     max-width: 900px; 
+    max-width: 900px;
     height: 70px;
     margin: 0 auto;
 }
@@ -94,6 +96,9 @@ header{
 }
 /* trabajando el main  */
 
+main{
+    overflow: hidden;
+}
 .main-sections-container{
     display: grid;
     grid-template-columns: 1fr;
@@ -106,7 +111,6 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 100%;
     height: 100vh;
 }
 .main-title-container{
@@ -189,8 +193,8 @@ header{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 125px;
-    height: 70px;
+     width: 125px;
+    height: 70px; 
     padding: 24px;
 }
 .fast-check-icon-container .icon__cnn{
@@ -273,8 +277,17 @@ header{
     background-color: #2FB464;
 }
 .main-login-container{
+    display: flex;
+    justify-content: center;
     grid-row: 5;
     background: var(--white);
+}
+.longin-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
 }
 .login-image-container img {
     width: 320px;
@@ -401,16 +414,17 @@ header{
 }
 .footer-icons{
     padding-block-start: 25px;
-
+    width: 150px;
 }
 .footer-icons span{
     display: inline-block;
+    cursor: pointer;
     margin-inline-start: 5px;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 36px;
-    height: 36px;
+     width: 36px;
+      height: 36px; 
 }
 .footer-icons .twitter{
     background-image: url('../assets/icon/5e349c95d8d0c236600d4ef1_TwitterIcon\ 1.svg');
